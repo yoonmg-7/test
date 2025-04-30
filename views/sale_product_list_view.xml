@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<!--    for sale procuts submenu capacity view form-->
+     <record id="sale_config_capacity_list_view" model="ir.ui.view">
+        <field name="name">sales.config.product.capacity.list</field>
+        <field name="model">product.capacity</field>
+        <field name="arch" type="xml">
+            <list string="Capacity" editable="bottom" sample="1">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+    <record id="action_sale_config_capacity_list" model="ir.actions.act_window">
+            <field name="name">Capacity</field>
+            <field name="res_model">product.capacity</field>
+            <field name="view_id" ref="sale_config_capacity_list_view"/>
+           <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+            Create Capacity
+            </p><p>
+            Use Tags to manage and track your Opportunities (product structure, sales type, ...)
+            </p>
+        </field>
+    </record>
+
+    <!--    for sale products submenu warranty view form-->
+     <record id="sale_config_warranty_list_view" model="ir.ui.view">
+        <field name="name">sales.config.product.warranty.list</field>
+        <field name="model">product.warranty</field>
+        <field name="arch" type="xml">
+            <list string="Warranty" editable="bottom" sample="1">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+    <record id="action_sale_config_products_warranty_list" model="ir.actions.act_window">
+            <field name="name">Warranty</field>
+            <field name="res_model">product.warranty</field>
+            <field name="view_id" ref="sale_config_warranty_list_view"/>
+           <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+            Create Warranty
+            </p><p>
+            Use Tags to manage and track your Opportunities (product structure, sales type, ...)
+            </p>
+        </field>
+    </record>
+
+        <!--    for sale products submenu Solar System view list-->
+     <record id="sale_config_products_product_solarsystem_list" model="ir.ui.view">
+        <field name="name">sales.config.product.solarsystem.list</field>
+        <field name="model">product.solarsystem</field>
+        <field name="arch" type="xml">
+            <list string="Solar System" editable="bottom" sample="1">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+    <record id="action_sale_config_products_product_solarsystem_list" model="ir.actions.act_window">
+            <field name="name">SolarSystem</field>
+            <field name="res_model">product.solarsystem</field>
+            <field name="view_id" ref="sale_config_products_product_solarsystem_list"/>
+           <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+            Create Solar System
+            </p><p>
+            Use Tags to manage and track your Opportunities (product structure, sales type, ...)
+            </p>
+        </field>
+    </record>
+
+          <!--    for sale products submenu EstimatedAnnualProduction view list-->
+     <record id="sale_config_products_estimated_annual_list" model="ir.ui.view">
+        <field name="name">sales.config.product.estimated.annual.production.list</field>
+        <field name="model">product.estimated.annual.production</field>
+        <field name="arch" type="xml">
+            <list string="Estimated Annual Production" editable="bottom" sample="1">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+    <record id="action_sale_config_products_estimated_annual_list" model="ir.actions.act_window">
+            <field name="name">Estimated Annual Production</field>
+            <field name="res_model">product.estimated.annual.production</field>
+            <field name="view_id" ref="sale_config_products_estimated_annual_list"/>
+           <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+            Create Estimated Annual Production
+            </p><p>
+            Use Tags to manage and track your Opportunities (product structure, sales type, ...)
+            </p>
+        </field>
+    </record>
+
+    <!--    for sale products submenu Battery Accessory 1 view list-->
+     <record id="sale_config_products_Battery_Accessory1_list" model="ir.ui.view">
+        <field name="name">sales.config.product.battery.accessory1.list</field>
+        <field name="model">product.battery.accessory1</field>
+        <field name="arch" type="xml">
+            <list string="Battery Accessory 1" editable="bottom" sample="1">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+    <record id="action_sale_config_products_Battery_Accessory1_list" model="ir.actions.act_window">
+            <field name="name">Battery Accessory 1</field>
+            <field name="res_model">product.battery.accessory1</field>
+            <field name="view_id" ref="sale_config_products_Battery_Accessory1_list"/>
+           <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+            Create Battery Accessory 1
+            </p><p>
+            Use Tags to manage and track your Opportunities (product structure, sales type, ...)
+            </p>
+        </field>
+    </record>
+
+        <!--    for sale products submenu Battery Accessory 2 view list-->
+     <record id="sale_config_products_Battery_Accessory2_list" model="ir.ui.view">
+        <field name="name">sales.config.product.battery.accessory2.list</field>
+        <field name="model">product.battery.accessory2</field>
+        <field name="arch" type="xml">
+            <list string="Battery Accessory 2" editable="bottom" sample="1">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+    <record id="action_sale_config_products_Battery_Accessory2_list" model="ir.actions.act_window">
+            <field name="name">Battery Accessory 2</field>
+            <field name="res_model">product.battery.accessory2</field>
+            <field name="view_id" ref="sale_config_products_Battery_Accessory2_list"/>
+           <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+            Create Battery Accessory 2
+            </p><p>
+            Use Tags to manage and track your Opportunities (product structure, sales type, ...)
+            </p>
+        </field>
+    </record>
+
+            <!--    for sale products submenu Installation Price view list-->
+     <record id="sale_config_products_InstallationPrice_list" model="ir.ui.view">
+        <field name="name">sales.config.product.installation.price.list</field>
+        <field name="model">product.installation.price</field>
+        <field name="arch" type="xml">
+            <list string="Installation Price" editable="bottom" sample="1">
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+    <record id="action_sale_config_products_InstallationPrice_list" model="ir.actions.act_window">
+            <field name="name">Installation Price</field>
+            <field name="res_model">product.installation.price</field>
+            <field name="view_id" ref="sale_config_products_InstallationPrice_list"/>
+           <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+            Create Installation Price
+            </p><p>
+            Use Tags to manage and track your Opportunities (product structure, sales type, ...)
+            </p>
+        </field>
+    </record>
+
+
+</odoo>

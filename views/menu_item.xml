@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Define the action -->
+         <menuitem id="menu_product_capacity"
+                  name="Capacity"
+                  parent="sale.prod_config_main"
+                  sequence="1"
+                  action="action_sale_config_capacity_list"
+                  />
+
+        <menuitem id="menu_product_Warranty"
+                  name="Warranty"
+                  parent="sale.prod_config_main"
+                  sequence="2"
+                  action="action_sale_config_products_warranty_list"
+                  />
+
+        <menuitem id="menu_product_SolarSystem"
+                  name="Solar System"
+                  parent="sale.prod_config_main"
+                  sequence="3"
+                  action="action_sale_config_products_product_solarsystem_list"
+                  />
+
+        <menuitem id="menu_product_EstimatedAnnualProduction"
+                  name="Estimated Annual Production"
+                  parent="sale.prod_config_main"
+                  sequence="4"
+                  action="action_sale_config_products_estimated_annual_list"
+                  />
+
+        <menuitem id="menu_product_Battery_Accessory1"
+                  name="Battery Accessory 1"
+                  parent="sale.prod_config_main"
+                  sequence="5"
+                  action="action_sale_config_products_Battery_Accessory1_list"
+                  />
+
+        <menuitem id="menu_product_Battery_Accessory2"
+                  name="Battery Accessory 2"
+                  parent="sale.prod_config_main"
+                  sequence="6"
+                  action="action_sale_config_products_Battery_Accessory2_list"
+                  />
+
+        <menuitem id="menu_product_InstallationPrice"
+                  name="Installation Price"
+                  parent="sale.prod_config_main"
+                  sequence="7"
+                  action="action_sale_config_products_InstallationPrice_list"
+                  />
+    </data>
+</odoo>

@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_product_capacity,res.product.capacity,model_product_capacity,base.group_user,1,1,1,1
+access_product_warranty,res.product.warranty,model_product_warranty,base.group_user,1,1,1,1
+access_product_solarsystem,res.product.solarsystem,model_product_solarsystem,base.group_user,1,1,1,1
+access_product_estimated_annual_production,res.product.estimated.annual.production,model_product_estimated_annual_production,base.group_user,1,1,1,1
+access_product_battery_accessory1,res.product.battery.accessory1,model_product_battery_accessory1,base.group_user,1,1,1,1
+access_product_battery_accessory2,res.product.battery.accessory2,model_product_battery_accessory2,base.group_user,1,1,1,1
+access_product_installation_price,res.product.installation.price,model_product_installation_price,base.group_user,1,1,1,1

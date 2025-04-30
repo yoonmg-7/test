@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="inherit_view_product_template_form_custom" model="ir.ui.view">
+        <field name="name">product.template.inherit.form.custom</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='product_tooltip']" position="after">
+                <field name="capacity_id"/>
+                <field name="warranty_id"/>
+                <field name="solarsystem_id"/>
+                <field name="production_id"/>
+                <field name="accessory1_id"/>
+                <field name="accessory2_id"/>
+                <field name="installation_price_id"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="inherit_view_product_template_list_custom" model="ir.ui.view">
+        <field name="name">product.template.inherit.list.custom</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='barcode']" position="after">
+                <field name="capacity_id" optional="hide" />
+                <field name="warranty_id" optional="hide"  />
+                <field name="solarsystem_id" optional="hide" />
+                <field name="production_id" optional="hide" />
+                <field name="accessory1_id" optional="hide" />
+                <field name="accessory2_id" optional="hide" />
+                <field name="installation_price_id" optional="hide" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

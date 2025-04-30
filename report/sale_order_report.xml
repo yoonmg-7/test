@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <template id="report_saleorder_line_product_warranty" inherit_id="sale.report_saleorder_document">
+    <xpath expr="//thead/tr/th[@name='th_priceunit']" position="after">
+      <th name="th_warranty_id"  class="text-end text-nowrap" >
+          <span>Warranty</span>
+      </th>
+    </xpath>
+
+<!-- Add the value from line.warranty_id in tbody -->
+    <xpath expr="//tbody//tr//td[@name='td_priceunit']" position="after">
+        <td name="td_warranty_id" class="text-end">
+            <span t-field="line.warranty_id"/>
+        </td>
+    </xpath>
+  </template>
+</odoo>
